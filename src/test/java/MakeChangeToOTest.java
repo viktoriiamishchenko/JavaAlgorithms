@@ -1,7 +1,7 @@
 import org.junit.Test;
 import org.testng.Assert;
 
-public class TestMakeChangeToO {
+public class MakeChangeToOTest {
 
     @Test
     public void testMakeChangeToO () {
