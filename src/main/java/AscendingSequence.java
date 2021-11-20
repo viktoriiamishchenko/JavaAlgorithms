@@ -21,7 +21,9 @@ public class AscendingSequence {
 
     public static void main (String [] args) {
         System.out.println(Arrays.toString(ascendingSequence(10,25,5)));
+
     }
+
 
 }
 
