@@ -11,7 +11,7 @@ public class Task_19_4 {
 
         String result = String.valueOf(str.charAt(0));
 
-        for (int i = 0; i < result.length(); i++) {
+        for (int i = 1; i < result.length(); i++) {
             int count = 0;
             for (int j = 0; j < result.length(); j++) {
                 if (str.charAt(i) == result.charAt(i)) {
