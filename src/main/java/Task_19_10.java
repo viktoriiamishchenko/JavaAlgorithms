@@ -21,13 +21,13 @@ public class Task_19_10 {
 
     public static boolean isPalindrome1 (String str) {
         boolean res;
-        String deleteSpace = str.trim().replaceAll(" ", "");
+        str = str.toLowerCase(Locale.ROOT).trim().replaceAll(" ", "");
         StringBuilder result = new StringBuilder();
-        for (int i = deleteSpace.length() - 1; i >= 0; i--) {
-            result.append(deleteSpace.charAt(i));
+        for (int i = str.length() - 1; i >= 0; i--) {
+            result.append(str.charAt(i));
         }
 
-        if (deleteSpace.toLowerCase(Locale.ROOT).equals(result.toString().toLowerCase(Locale.ROOT))) {
+        if (str.equals(result.toString())) {
             res = true;
         } else {
             res = false;
@@ -35,4 +35,6 @@ public class Task_19_10 {
 
         return res;
     }
+
+    //public static <T> boolean isPalindrome1 (T data)
 }
