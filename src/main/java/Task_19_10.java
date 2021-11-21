@@ -21,7 +21,7 @@ public class Task_19_10 {
 
     public static boolean isPalindrome1 (String str) {
         boolean res;
-        String deleteSpace = str.replaceAll("[\\a-zA-Z]", "");
+        String deleteSpace = str.trim().replaceAll(" ", "");
         StringBuilder result = new StringBuilder();
         for (int i = deleteSpace.length() - 1; i >= 0; i--) {
             result.append(deleteSpace.charAt(i));
