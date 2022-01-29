@@ -14,9 +14,9 @@ public class AscendingSequence {
                 array[count] = i;
                 count++;
             }
+
             return array;
         }
-
     }
 
     public static void main (String [] args) {
